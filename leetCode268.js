@@ -21,16 +21,16 @@ let missingNumber = function(nums) {
 //        }    
 //     }
  
- // SOLUTION USING MATH
-let actualTotal = 0;
-for(let num of nums){
-    actualTotal += num; 
-}
+    // SOLUTION USING MATH
+    let actualTotal = 0;
+    for(let num of nums){
+        actualTotal += num; 
+    }
 
-let expectedTotal = 0;
-for(let i = 0; i <= nums.length; i++){
-    expectedTotal += i;
-}
+    let expectedTotal = 0;
+    for(let i = 0; i <= nums.length; i++){
+        expectedTotal += i;
+    }
 
-return expectedTotal - actualTotal;
+    return expectedTotal - actualTotal;
 };
