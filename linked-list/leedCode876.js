@@ -14,3 +14,16 @@ If there are two middle nodes, return the second middle node.
 // IN -> ListNode
 // OUT -> ListNode
 
+let middleNode = function(head){
+    
+    let slow = head;
+    let fast = head;
+
+    // fast goes until end. slow ends up in the middle
+    while(fast !== null && fast.next !== null){
+        slow = slow.next;
+        fast = fast.next.next;
+    }
+
+    return slow;
+};
