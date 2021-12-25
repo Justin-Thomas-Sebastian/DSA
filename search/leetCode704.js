@@ -22,7 +22,7 @@ let search = function(nums, target) {
             return middle;
         } else if (target > nums[middle]){  // eliminate left side 
             left = middle + 1;
-        } else if (target < nums[middle]){  // elimminate right side
+        } else if (target < nums[middle]){  // eliminate right side
             right = middle - 1;
         }
     }
