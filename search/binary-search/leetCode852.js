@@ -29,19 +29,21 @@ Output: 1
 // IN -> Array[Number]
 // OUT -> Number
 
- let peakIndexInMountainArray = function(arr) {
+let peakIndexInMountainArray = function(arr) {
     
     let left = 0;
     let right = arr.length - 1;
     
     while (left <= right){
+
         let middle = Math.floor(left + (right - left)/2);
-        
+
         if(arr[middle] < arr[middle + 1]){ // until we find the peak
             left = middle + 1;
         } else {
             right = middle - 1;
         }   
     }
+
     return left;
 };
