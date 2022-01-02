@@ -6,11 +6,23 @@
  could you find an O(n) solution using a different approach?
  */
 
- let sortedSquares = function(nums) {    
+// IN -> number[]
+// OUT -> number[]
+
+// left = first element
+// right = last element
+// compare left and right
+// find larger absolute value
+// square the larger value
+// then add to the end of result array
+// increment left/ decrement right
+// after loop, result arr will be in descending order
+// return reversed array
+let sortedSquares = function(nums) {    
     let result = [];
     let left = 0;
     let right = nums.length - 1;
-    
+
     while(left <= right){
         if(Math.abs(nums[left]) >= Math.abs(nums[right])){
             result.push(nums[left] ** 2);
