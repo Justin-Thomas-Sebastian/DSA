@@ -9,7 +9,7 @@ Note that after backspacing an empty text, the text will continue empty.
 
 Example: 
 Input: s = "ab#c", t = "ad#c"
-Output: true
+Output: true`
 Explanation: Both s and t become "ac".
 
 Input: s = "a#c", t = "b"
